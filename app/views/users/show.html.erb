@@ -1,0 +1,5 @@
+<div>
+	Welcome, <%= @user.email %>!
+</div>
+<%= link_to "Home", users_path %>
+<%= link_to "Edit User", edit_user_path(@user.id) %>

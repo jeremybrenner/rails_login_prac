@@ -1,0 +1,10 @@
+<h1>Edit Your Profile</h1>
+<%= form_for @user, url: "/users/#{@user.id}", method: "patch" do |f| %>
+
+	<div><%= f.text_field :first_name, placeholder: "first name" %></div>
+	<div><%= f.text_field :last_name, placeholder: "last name" %></div><br>
+	<div><%= f.text_field :email, placeholder: "email" %></div>
+	<div><%= f.password_field :password, placeholder: "password" %></div><br>
+	<%= f.submit "Save User" %></div><br>
+
+<% end %>	

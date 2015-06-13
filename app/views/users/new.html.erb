@@ -1,0 +1,9 @@
+<h1>Register as new User</h1>
+<%= form_for @user do |f| %>
+	<div><%= f.text_field :first_name, placeholder: "first name" %></div>
+	<div><%= f.text_field :last_name, placeholder: "last name" %></div><br>
+	<div><%= f.text_field :email, placeholder: "email" %></div>
+	<div><%= f.password_field :password, placeholder: "password" %></div><br>
+	<div><%= f.submit "Register" %></div><br>
+<% end %>	
+	<%= link_to "Home", users_path %>
